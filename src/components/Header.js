@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
+import "../style/main.scss";
 const Header = () => {
   const [text, setText] = useState('')
   const dispatch = useDispatch()
@@ -19,7 +20,7 @@ const Header = () => {
   }
 
   return (
-    <header className="header">
+    <header className="main">
       <input
         className="new-todo"
         placeholder="What needs to be done?"
